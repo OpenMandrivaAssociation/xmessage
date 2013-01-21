@@ -1,11 +1,10 @@
 Name: xmessage
-Version: 1.0.3
-Release: %mkrel 3
+Version: 1.0.4
+Release: 1
 Summary: Display a message or query in a window 
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libxaw-devel >= 1.0.1
 BuildRequires: libxt-devel >= 1.0.0
@@ -23,14 +22,9 @@ line, a file, or standard input
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xmessage
 %{_datadir}/X11/app-defaults/Xmessage-color
 %{_datadir}/X11/app-defaults/Xmessage
