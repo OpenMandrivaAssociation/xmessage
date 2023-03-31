@@ -1,6 +1,6 @@
 Name: xmessage
 Version: 1.0.6
-Release: 1
+Release: 2
 Summary: Display a message or query in a window 
 Group: Development/X11
 Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
